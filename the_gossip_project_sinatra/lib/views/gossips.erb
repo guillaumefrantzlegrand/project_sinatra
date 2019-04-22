@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Le savais-tu?</h1>
+    <h2>Voici un gossip qui te fera rire:</h2> 
+    <p> Gossip n°<%= params["id"] %>
+    <p> <%= gossips.content %></p>
+    <p> by - <%= gossips.author %></p> 
+    <a href="/gossips/edit/<%= params["id"]%>">Edit ce potin !</a>
+    <a href="/gossips/new/">Crée un gossip !</a>
+  </body>
+</html>
